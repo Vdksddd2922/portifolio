@@ -264,11 +264,14 @@ function initScrollAnimations() {
     });
     
     // Stats counter animation
-    gsap.fromTo('.stat-number', 
-        { textContent: 0 },
-        { textContent: 2, duration: 2, ease: 'power2.out', snap: { textContent: 1 },
-        onUpdate: function() { this.targets()[0].textContent = Math.round(this.targets()[0].textContent); },
-        scrollTrigger: { trigger: '.sobre-stats', start: 'top 85%' }
+    document.querySelectorAll('.stat-number').forEach(el => {
+        const targetValue = parseInt(el.getAttribute('data-count'));
+        gsap.fromTo(el, 
+            { textContent: 0 },
+            { textContent: targetValue, duration: 2, ease: 'power2.out', snap: { textContent: 1 },
+            onUpdate: function() { this.targets()[0].textContent = Math.round(this.targets()[0].textContent); },
+            scrollTrigger: { trigger: '.sobre-stats', start: 'top 85%' }
+        });
     });
     
     // Skills section
