@@ -54,8 +54,8 @@ Este é o meu portfólio pessoal, onde showcasing meus projetos e habilidades em
 
 <div align="center">
 
-![Projetos](https://img.shields.io/badge/Projetos-2-blue)
-![Experiência](https://img.shields.io/badge/Experiência-1%20ano-green)
+![Projetos](https://img.shields.io/badge/Projetos-10-blue)
+![Experiência](https://img.shields.io/badge/Experiência-2%20anos-green)
 ![Dedicação](https://img.shields.io/badge/Dedicação-100%25-orange)
 
 </div>
